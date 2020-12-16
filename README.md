@@ -21,9 +21,8 @@ Project Description/Outline:
 
 To begin, our team took the GTZAN Genre Collection Dataset found at www.kaggle.com which consists of 1,000 audio tracks each 30 seconds long to train our model. The dataset contains 10 genres, each represented by 100 tracks which are all 22050 Hz monophonic 16-bit audio files in .au format. We will use these files to train our model utilizing machine learning in order to classify dataset audio files and uploaded 30 second sample sets into the following genres: blues, classical, country, disco, hiphop, jazz, reggae, rock, metal and pop.
 
-![2-Prince](Images/2.png)
-
 ### Visualizations
+![2-Prince](Images/2.png)
 
 By first loading our dataset into Jupyter Notebook we were able to use the Python package Librosa to perform an analysis on these music audio files. Through audio acquisition and playback, the Librosa module allowed us to analyze the audio signals of the 1,000 music samples and train our model using 5 second samples. After creating the spectrograms and saving these as images we were able to train our model on these files. 
 
