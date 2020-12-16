@@ -21,7 +21,7 @@ Project Description/Outline:
 
 To begin, our team took the GTZAN Genre Collection Dataset found at www.kaggle.com which consists of 1,000 audio tracks each 30 seconds long to train our model. The dataset contains 10 genres, each represented by 100 tracks which are all 22050 Hz monophonic 16-bit audio files in .au format. We will use these files to train our model utilizing machine learning in order to classify dataset audio files and uploaded 30 second sample sets into the following genres: blues, classical, country, disco, hiphop, jazz, reggae, rock, metal and pop.
 
-![2-Aircraft](Images/2.png)
+![2-Prince](Images/2.png)
 
 ### Visualizations
 
@@ -32,7 +32,7 @@ Using Librosa, we built a MIR (Music Information Retrieval System) which produce
 
 ### Datasets Used 
 
-   ![3-Bombing](Images/3.png)
+   ![3-Music](Images/3.png)
 
 Datasets Used:
 https://www.kaggle.com/carlthome/gtzan-genre-collection
