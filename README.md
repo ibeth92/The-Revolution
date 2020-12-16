@@ -25,17 +25,20 @@ To begin, our team took the GTZAN Genre Collection Dataset found at www.kaggle.c
 
 ### Visualizations
 
-The first visual is an interactive map which allows the user to explore data we found on WWII aerial bombing events that occurred between 1942 and 1945 within all theaters. This tells us a visual story of the major bombing events that took place during WWII and how these may have influenced the overall trajectory of the war. 
+By first loading our dataset into Jupyter Notebook we were able to use the Python package Librosa to perform an analysis on these music audio files. Through audio acquisition and playback, the Librosa module allowed us to analyze the audio signals of the 1,000 music samples and train our model using 5 second samples. After creating the spectrograms and saving these as images we were able to train our model on these files. 
 
-Our second visual is an interactive table chart that shows the detailed stats of the data we found including aircraft used to transport the bombs, weapons locations, etc. and gives the user the opportunity to see the war unfold in a chronological order, with the opportunity to select and interact with specific dates in history.
+Using Librosa, we built a MIR (Music Information Retrieval System) which produced spectrograms from the analysis. These spectrograms are a visual representation of the spectrum of frequencies of sound as they vary over time. In 2 dimensional representations, the x axis is frequency while the second axis is time. These visual changes in frequency are what we were able to use to train our model to determine where genre differences lie. 
+
 
 ### Datasets Used 
 
    ![3-Bombing](Images/3.png)
 
-   https://www.kaggle.com/smid80/weatherww2%22%20%5Ct%20%22_blank
-   https://data.world/datamil/world-war-ii-thor-data
+Datasets Used:
+https://www.kaggle.com/carlthome/gtzan-genre-collection
+
     
-   <i>Andrew Zamora, Vanessa Simpson, Ibet Hernandez</i>
+   <i>Vanessa Simpson, Stephanie Plaza, Victoria Cruz, Ibet Hernandez
+</i>
    <br>
    <i>UTSA | Trilogy Data Analytics Bootcamp 2020</i>
