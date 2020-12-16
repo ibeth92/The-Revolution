@@ -1,13 +1,15 @@
-<h1><p align="center"><strong> Visualizing Weapons, Weather, and Aircraft Data from World War II </strong></p>
+<h1><p align="center"><strong> Project Title:  The Revolution </strong></p>
 <br>
 <p align="center">
 </h1>
 
 <p align="center">https://herokuapp.com/</p>
 
-<p align="center">“EVERY DAY, MEMORIES OF WORLD WAR II—ITS SIGHTS AND SOUNDS, ITS TERRORS AND TRIUMPHS—DISAPPEAR.”</p>
+<p align="center">“Recorded music permeates every aspect of our daily lives and legal access-based music services combined with illegal online file sharing services means that more or less every song is available everywhere, all the time. This access explosion transforms the way people use and relate to recorded music.”
 
-<p align="center"> - www.nationalww2museum.org    
+</p>
+
+<p align="center"> - https://www.bbvaopenmind.com/en/books/19-key-essays-on-how-internet-is-changing-our-lives/    
 </p>
 <br>
 
@@ -15,8 +17,9 @@
 
 ![1-Intro](Images/1.png)
 
-Welcome to the World War II Visualizations Dashboard where you will be able to dive deeper into the historical events of this war occurring between 1942-1945. The goal of our visualizations is to provide the user with a comprehensive overview of major bombing events, where and when they occurred, and how weather conditions may have affected these missions
+Project Description/Outline:
 
+To begin, our team took the GTZAN Genre Collection Dataset found at www.kaggle.com which consists of 1,000 audio tracks each 30 seconds long to train our model. The dataset contains 10 genres, each represented by 100 tracks which are all 22050 Hz monophonic 16-bit audio files in .au format. We will use these files to train our model utilizing machine learning in order to classify dataset audio files and uploaded 30 second sample sets into the following genres: blues, classical, country, disco, hiphop, jazz, reggae, rock, metal and pop.
 
 ![2-Aircraft](Images/2.png)
 
