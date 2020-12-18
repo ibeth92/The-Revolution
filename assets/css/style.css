@@ -61,9 +61,21 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   top: 20px;
 }
-
+/* 
 #player {
  width: 30%;
+} */
+
+#player {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
 }
 
 /* @media (max-width: 992px) {
