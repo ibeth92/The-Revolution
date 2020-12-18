@@ -12,7 +12,6 @@ app = Flask(__name__)
 
 # app.config['UPLOAD_FOLDER'] = 
 
-
 @app.route("/", methods=['GET'])
 @cross_origin()
 def homepage():
