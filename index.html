@@ -79,21 +79,19 @@
     <div class="modal-dialog" role="image">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">
+          <!-- <h5 class="modal-title" id="exampleModalLongTitle">
             <span style='font-size:30px;'>&#127925;</span>
             <span style='font-size:30px;'>&#127926;</span>
             <span style='font-size:30px;'>&#127925;</span>
-          </h5>
+          </h5> -->
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          <img src="/assets/img/genre.jpg" width="400" height="400">
+        <div class="modal-body text-center position-relative">
+          <img src="/assets/img/music-difference.jpg" width="475" height="475">
         </div>
         <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -104,18 +102,63 @@
     <div class="container">
 
       <div class="row content">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
           <h2>“The only truth is music.”</h2>
           <h3>― Jack Kerouac</h3>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+        <div class="col-lg-8 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
           <p>
             Music and genre... genre and music... how many genres are there really? or does genre even exist anymore?
           </p>
           <ul>
-            <li><i class="ri-check-double-line"></i> what is genre?</li>
-            <li><i class="ri-check-double-line"></i> how many genres are there really?</li>
-            <li><i class="ri-check-double-line"></i> or does genre even exist anymore?</li>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn-btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      What is 'genre'?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    the definition of genre
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn-btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      How many genres are there?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Do genres even exist anymore?
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn-btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      How has technology changed music and music classification?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Summary on how machine learning and AI have changed music.
+                  </div>
+                </div>
+              </div>
+            </div>
           </ul>
         </div>
       </div>
