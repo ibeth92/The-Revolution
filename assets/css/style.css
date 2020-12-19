@@ -10,15 +10,15 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #303030;
 }
 
 a {
-  color: #009970;
+  color: rgb(68,0,68);
 }
 
 a:hover {
-  color: #00cc95;
+  color: rgb(68, 0, 68));
   text-decoration: none;
 }
 
@@ -61,10 +61,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   top: 20px;
 }
-/* 
-#player {
- width: 30%;
-} */
 
 #player {
   font-size: 10px;
@@ -77,20 +73,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
   font-weight: 100;
 }
-
-/* @media (max-width: 992px) {
-  #header {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    top: 0;
-    background: #009970;
-  }
-  #header.header-scrolled, #header .header-container {
-    background: #009970;
-  }
-  #header .logo h1 {
-    font-size: 24px;
-  }
-} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -216,9 +198,41 @@ section {
   margin-bottom: 0;
 }
 
-/* .modal-body {
-  max-height: 600px;
-} */
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about .btn-btn-link {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 2px;
+  /* border-radius: 50px; */
+  transition: 0.5s;
+  /* margin: 4px; */
+  border: #fff;
+  color: rgb(68, 0, 68);
+}
+
+#about .card-body {
+  font-family: "open sans", sans-serif;
+  /* justify-content: center; */
+  text-transform: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  
+  padding: 4px 10px;
+  /* border-radius: 50px; */
+  transition: 0.5s;
+  margin: 4px;
+  border: #fff;
+  color: rgb(43, 43, 43);
+}
+
 
 /*--------------------------------------------------------------
 # Counts
