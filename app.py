@@ -7,7 +7,8 @@ import flask
 from flask import Flask, jsonify, render_template, request
 from flask_cors import cross_origin 
 from werkzeug import secure_filename
-
+import pickle
+import pandas as pd
 
 # Setup Flask
 # Create an app, pass to __name__
@@ -31,15 +32,10 @@ def homepage():
 def upload_file():
     if request.method == 'POST':
         f = request.files['file']
-        f.save(secure_filename(f.filename))
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         return 'file uploaded successfully'
 
-data = pd.read_csv('data.csv')
-
-    data = data.drop(['filename'],axis=1)
-
 @app.route('/predict/<file_name>', methods=['POST'])
-
 # from Jupyter Notebook features
 def predict(file_name=None):
     y, sr = librosa.load(f'uploads/{file_name}', mono=True, duration=30)
@@ -55,17 +51,12 @@ def predict(file_name=None):
     df = pd.DataFrame(data= [chroma_stft, spec_cent, spec_bw, rolloff, zcr, mfcc, rmse], columns= [['chroma_stft','spec_cent', 'spec_bw', 'rolloff', 'zcr', 'mfcc', 'rmse']])
 
 # from dataframe create train_test_split
-
+# DON'T NEED
 
 # run model.predict
-
-
+    df_predicted= model.predict(df)
 # return results
-
-
-
-    return render_template('index.html', )
-
+    return jsonify(df_predicted)
 
 if __name__ == "__main__":
     app.run(debug=True)
