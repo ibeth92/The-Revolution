@@ -218,13 +218,11 @@ section {
 
 #about .card-body {
   font-family: "open sans", sans-serif;
-  /* justify-content: center; */
   text-transform: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
-  display: flex;
-  
+  display: inline-block;
   padding: 4px 10px;
   /* border-radius: 50px; */
   transition: 0.5s;
