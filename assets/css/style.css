@@ -219,6 +219,7 @@ section {
 #about .card-body {
   font-family: "open sans", sans-serif;
   text-transform: none;
+  text-align: justify;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -226,11 +227,10 @@ section {
   padding: 4px 10px;
   /* border-radius: 50px; */
   transition: 0.5s;
-  margin: 4px;
+  margin: 10px;
   border: #fff;
   color: rgb(43, 43, 43);
 }
-
 
 /*--------------------------------------------------------------
 # Counts
