@@ -15,7 +15,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Create path to models
-model = pickle.load(open('svc_model.pkl', 'rb'))
+model = pickle.load(open('svpickle_model.pkl', 'rb'))
 
 app.config['UPLOAD_FOLDER'] = 'uploads'
 
