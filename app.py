@@ -12,13 +12,15 @@ from werkzeug import secure_filename
 # Setup Flask
 # Create an app, pass to __name__
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+
+# Create path to models
+model = pickle.load(open('svc_model.pkl', 'rb'))
 
 app.config['UPLOAD_FOLDER'] = 'uploads'
 
-svc_model.sav
+# svc_model.sav
 
-
+# Flask route for the root/index page
 @app.route("/", methods=['GET'])
 @cross_origin()
 def homepage():
@@ -36,8 +38,9 @@ data = pd.read_csv('data.csv')
 
     data = data.drop(['filename'],axis=1)
 
-
 @app.route('/predict/<file_name>', methods=['POST'])
+
+# from Jupyter Notebook features
 def predict(file_name=None):
     y, sr = librosa.load(f'uploads/{file_name}', mono=True, duration=30)
     chroma_stft = librosa.feature.chroma_stft(y=y, sr=sr)
@@ -48,14 +51,17 @@ def predict(file_name=None):
     mfcc = librosa.feature.mfcc(y=y, sr=sr)
     rmse = librosa.feature.rms(y=y)
 
-    # create the dataframe
-    
+# create the dataframe
+    df = pd.DataFrame(data= [chroma_stft, spec_cent, spec_bw, rolloff, zcr, mfcc, rmse], columns= [['chroma_stft','spec_cent', 'spec_bw', 'rolloff', 'zcr', 'mfcc', 'rmse']])
 
-    # from dataframe create train_test_split
+# from dataframe create train_test_split
 
-    # run model.predict
 
-    # return results
+# run model.predict
+
+
+# return results
+
 
 
     return render_template('index.html', )
