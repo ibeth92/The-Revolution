@@ -45,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #009970;
+  background: rgb(68, 0, 68);
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #00805d;
+  background: rgb(68, 0, 68);
   color: #fff;
 }
 
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -185,7 +185,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f6f6f7;
+  background-color: white;
 }
 
 .section-title {
@@ -207,7 +207,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #009970;
+  background: rgb(68, 0, 68);
   bottom: 0;
   left: 0;
 }
@@ -230,9 +230,9 @@ section {
 }
 
 .counts .counters span {
-  font-size: 36px;
+  font-size: 24px;
   display: block;
-  font-weight: 700;
+  font-weight: 350;
 }
 
 .counts .counters p {
@@ -240,7 +240,7 @@ section {
   margin: 0 0 20px 0;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 250;
 }
 
 /*--------------------------------------------------------------
@@ -265,7 +265,7 @@ section {
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: white;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 50px;
@@ -274,7 +274,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #009970;
+  background:rgb(68, 0, 68);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -286,7 +286,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(54, 52, 58, 0.6);
+  background: white;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -351,7 +351,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #00cc95;
+  color: rgb(68, 0, 68);
 }
 
 .portfolio .portfolio-wrap:hover::before {
