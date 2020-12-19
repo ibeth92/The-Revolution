@@ -393,3 +393,10 @@ section {
   font-size: 13px;
   color: #444444;
 }
+
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
