@@ -33,11 +33,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
-      <!-- <div class="header-container d-flex align-items-center"> -->
       <div align="right">
-        <!-- <audio id="player" class="container text-center position-relative" controls>
-          <source src="/assets/Symphony No. 8.mp3" type="audio/mpeg">
-        </audio> -->
         <iframe id="player" width="35%" height="95" scrolling="no" frameborder="no" allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259325562&color=%235e0078&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <div>
@@ -48,7 +44,6 @@
         </div>
       </div>
     </div><!-- End Header Container -->
-    <!-- </div> -->
   </header><!-- End Header -->
 
   <!-- ======= Main Landing ======= -->
@@ -63,23 +58,12 @@
     </div>
   </section><!-- End Hero -->
 
-
-
-
-  <!-- Button trigger modal -->
-
-
   <!-- Modal -->
   <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
     <div class="modal-dialog" role="image">
       <div class="modal-content">
         <div class="modal-header">
-          <!-- <h5 class="modal-title" id="exampleModalLongTitle">
-            <span style='font-size:30px;'>&#127925;</span>
-            <span style='font-size:30px;'>&#127926;</span>
-            <span style='font-size:30px;'>&#127925;</span>
-          </h5> -->
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -200,20 +184,17 @@
     </div>
   </section><!-- End About Section -->
 
-  <div data-aos="fade-in">
-    <p class="text-center position-relative font-italic">Jazz has borrowed from other genres of music
-      and also has lent itself to other genres of music.</p>
-    <p class="text-center position-relative"> - Herbie Hancock</p>
-  </div>
-
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
-
-      <div class="section-title" data-aos="fade-left">
+      <div class="section-title">
         <h2>Spectrograms</h2>
+      </div>
+      <div class="portfolio-text">
         <h4>A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time.
         </h4>
+        <p>Each graph is made of two geometric dimensions - one axis represents time, the other represents frequency. A
+          third dimension indicates the amplitude of a particular frequency and is represented by a change in color.</p>
       </div>
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -226,14 +207,11 @@
               <div class="portfolio-links">
                 <a href="Spectrograms/blues/blues00000.png" data-gall="portfolioGallery" class="venobox"
                   title="Blues"><i class="bx bx-plus"></i></a>
-
                 <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
         </div>
-
-
 
         <div class="col-lg-4 col-md-10 portfolio-item filter-web">
           <div class="portfolio-wrap">
@@ -351,7 +329,6 @@
           <div class="portfolio-wrap">
             <img src="Spectrograms//rock/rock00000.png" class="img-fluid" alt="">
             <caption>Rock</caption>
-
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="Spectrograms//rock/rock00000.png" data-gall="portfolioGallery" class="venobox" title="Rock"><i
@@ -371,37 +348,27 @@
       <div class="text-center" data-aos="zoom-in">
         <h3>Test the Theory</h3>
         <h4>Upload a Song</h4>
-        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
-          <input type="file" name="file" />
-          <input type="submit" /></align>
-        </form>
+        <div class="audio-upload">
+          <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" /><br>
+            <input type="submit" />
+          </form>
+        </div>
       </div>
     </div>
-  </section>
+  </section><!-- End Uploader Section -->
 
-  <!--<div class ="audio-container"></div>
-        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type="submit" /></align>
-        </form>
-      </div> -->
-
-  <!-- </div> -->
-
+  <!-- ======= Sources ======= -->
   <section id="source">
     <div class="source-list">
       <h5>Sources</h5>
       <p class="text-md-left position-relative">List of all of our sources</p>
     </div>
-  </section>
-
-  </main><!-- End #main -->
+  </section><!-- End Sources -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="container d-md-flex py-4">
-
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
           &copy; Copyright <strong><span>UTSA Data Analytics Bootcamp 2020</span></strong>

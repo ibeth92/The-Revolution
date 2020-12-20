@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 10px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -171,7 +171,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .section-title h2 {
@@ -256,41 +256,21 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Audio
+--------------------------------------------------------------*/
+#audio .audio-upload{
+  color: #444444;
+  font-size: 14px;
+  background: white;
+  align-items: center;
+  padding: 10px;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 16px 8px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50px;
-  font-family: "Poppins", sans-serif;
-}
-
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background:rgb(68, 0, 68);
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
 }
 
 .portfolio .portfolio-wrap {
@@ -334,26 +314,6 @@ section {
   padding: 20px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 5px 0 0;
@@ -393,12 +353,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
+  color: #3d3d3d;
   font-size: 14px;
-  background: #dfccf3;
+  background: #ceb3eb;
 }
 
-#footer .footer-top {
+/* #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #dfccf3;
 }
@@ -409,10 +369,10 @@ section {
   color: #444444;
   position: relative;
   padding-bottom: 12px;
-}
-
+} */
+/* 
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
   color: #444444;
-}
+} */
