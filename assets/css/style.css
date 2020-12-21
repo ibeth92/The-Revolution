@@ -14,16 +14,20 @@ body {
 }
 
 a {
-  color: rgb(68,0,68);
+  color: rgb(100,0,100);
 }
 
 a:hover {
-  color: rgb(68, 0, 68));
+  color: rgb(100, 0, 100));
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.kn {
+    text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -45,13 +49,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: rgb(68, 0, 68);
+  background: rgb(100, 0, 100);
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: rgb(68, 0, 68);
+  background: rgb(100, 0, 100);
   color: #fff;
 }
 
@@ -92,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.65);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -130,12 +134,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
-  color: rgb(68, 0, 68);
+  color: rgb(100, 0, 100);
 }
 
 #hero .btn-btn-primary:hover {
-  background:rgb(68, 0, 68);
-  border: 2px solid rgb(68, 0, 68);
+  background:rgb(100, 0, 100);
+  border: 2px solid rgb(100, 0, 100);
   color:white;
 }
 
@@ -189,7 +193,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: rgb(68, 0, 68);
+  background: rgb(100, 0, 100);
   bottom: 0;
   left: 0;
 }
@@ -213,7 +217,7 @@ section {
   transition: 0.5s;
   /* margin: 4px; */
   border: #fff;
-  color: rgb(68, 0, 68);
+  color: rgb(100, 0, 100);
 }
 
 #about .card-body {
@@ -236,7 +240,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: rgb(68, 0, 68);
+  background: rgb(100, 0, 100);
   padding: 40px 0 20px 0;
   color: white;
 }
@@ -258,12 +262,68 @@ section {
 /*--------------------------------------------------------------
 # Audio
 --------------------------------------------------------------*/
-#audio .audio-upload{
-  color: #444444;
+.audio {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../img/point_land.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+#audio h2{
+  font-size: 36px;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.5px;
+  /* position: relative; */
+}
+
+#audio h4{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#audio .inputfile {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 14px;
-  background: white;
-  align-items: center;
-  padding: 10px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: white;
+}
+
+#audio .inputfile:hover {
+  background:rgb(100, 0, 100);
+  cursor: pointer;
+  border: 2px solid rgb(100, 0, 100);
+  color:white;
+}
+#audio .submitfile {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: rgb(100, 0, 100);
+}
+#audio .submitfile:hover {
+  background:rgb(100, 0, 100);
+  border: 2px solid rgb(100, 0, 100);
+  color:white;
 }
 
 /*--------------------------------------------------------------
@@ -323,7 +383,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: rgb(68, 0, 68);
+  color: rgb(100, 0, 100);
 }
 
 .portfolio .portfolio-wrap:hover::before {

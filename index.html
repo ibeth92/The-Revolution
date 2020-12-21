@@ -148,11 +148,13 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
                     Technology has changed the way music is composed, heard, and transmitted. For example, “Strawberry
-                    Fields Forever” is said to have been 2 separate versions that were spliced together and adjusted for
-                    tempo and pitch. Google’s Magenta Project can produce songs that have been written and are performed
-                    by AI. Technology is becoming more and more involved in the creative process. LANDR, an AI-based
-                    mastering service, allows artists to master their own tracks by replicating human engineers with AI
-                    and machine learning and they have helped 2 million musicians master more than 10 million songs.
+                    Fields Forever” is said to have been 2 different recorded versions that were spliced together and
+                    adjusted for
+                    tempo and pitch, therefore creating the song we know today. Google’s Magenta Project can produce
+                    songs that have been written and are performed by AI. Technology is becoming more and more involved
+                    in the creative process. LANDR, an AI-based mastering service, allows artists to master their own
+                    tracks by replicating human engineers with AI and machine learning and they have helped 2 million
+                    musicians master more than 10 million songs.
                   </div>
                 </div>
               </div>
@@ -167,12 +169,12 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
-                    It’s hard to say. Every creative process is born from the influences of what someone else has
-                    already done. Painters can be influenced by Monet and Pollock, writers by Hemingway and King. The
-                    same goes for musicians. The days of listening to or creating one style of music are over. If you
-                    were to look at someone’s list of downloaded music you would find a wide range of styles, tempos,
-                    and moods. So wouldn’t it make sense for a musician to take a little piece of this and a pinch of
-                    that to create something that doesn’t fit some predefined mold.
+                    Yes and no. With technology being used more often in the creation and production processes, certain
+                    music features that may sound like they belong to different genres, can actually be more closely
+                    related when extracted and compared. However, there are specific features that distinguish one genre
+                    from another. For example, classical music refers to most orchestral styles with no vocals, whereas
+                    metal features a band setup with electric guitars, bass, and drums, and a 'heavy' and aggressive
+                    sound.
                   </div>
                 </div>
               </div>
@@ -194,7 +196,11 @@
         <h4>A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time.
         </h4>
         <p>Each graph is made of two geometric dimensions - one axis represents time, the other represents frequency. A
-          third dimension indicates the amplitude of a particular frequency and is represented by a change in color.</p>
+          third dimension indicates the amplitude of a particular frequency and is represented by a change in color. The
+          higher the intensity, the brighter the color. The spectrograms below were created using <a
+            href="https://librosa.org/doc/latest/index.html" class="kn" rel="noopener nofollow">librosa</a>, a
+          python package used for music and audio analysis.
+        </p>
       </div>
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -346,14 +352,12 @@
   <section id="audio" class="audio">
     <div class="container">
       <div class="text-center" data-aos="zoom-in">
-        <h3>Test the Theory</h3>
+        <h2>Test the Theory</h2>
         <h4>Upload a Song</h4>
-        <div class="audio-upload">
-          <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" /><br>
-            <input type="submit" />
-          </form>
-        </div>
+        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+          <input type="file" name="Upload" id="file" class="inputfile" />
+          <input type="submit" name="submit" id="submit" class="submitfile" />
+        </form>
       </div>
     </div>
   </section><!-- End Uploader Section -->
@@ -362,7 +366,22 @@
   <section id="source">
     <div class="source-list">
       <h5>Sources</h5>
-      <p class="text-md-left position-relative">List of all of our sources</p>
+      <ul>
+        <li><a href="https://librosa.org/doc/latest/index.html">librosa</a></li>
+        <li><a href="https://newsroom.spotify.com/company-info/">Spotify</a></li>
+        <li><a href="https://magenta.tensorflow.org/">Magenta</a></li>
+        <li><a href="https://www.landr.com/">LANDR</a></li>
+        <li><a href="https://towardsdatascience.com/music-genre-classification-with-python-c714d032f0d8">Music Genre
+            Classification with Python</a></li>
+        <li><a
+            href="https://www.music.org/index.php?option=com_content&view=article&id=2675:the-impact-of-technology-on-the-musical-experience&catid=220&Itemid=3665">The
+            Impact of Technology on the Musical Experience</a></li>
+        <li><a href="https://www.openmicuk.co.uk/advice/types-genres-of-music/">Genres Of Music | Defining Different
+            Types Of Genres</a></li>
+        <li><a
+            href="https://www.forbes.com/sites/bernardmarr/2019/07/05/the-amazing-ways-artificial-intelligence-is-transforming-the-music-industry/?sh=2a366dd85072">The
+            Amazing Ways Artificial Intelligence Is Transforming The Music Industry</a></li>
+      </ul>
     </div>
   </section><!-- End Sources -->
 
