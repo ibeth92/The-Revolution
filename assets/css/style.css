@@ -394,9 +394,45 @@ section {
   color: #444444;
 }
 
+#audio .inputfile {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  /* display: inline-block; */
+  padding: 8px 28px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: rgb(68, 0, 68);
+}
 
-.audio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center 
+#audio .inputfile:hover {
+  background:rgb(68, 0, 68);
+  cursor: pointer;
+  border: 2px solid rgb(68, 0, 68);
+  color:white;
+}
+
+#audio .submitfile {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: rgb(68, 0, 68);
+}
+
+#audio .submitfile:hover {
+  background:rgb(68, 0, 68);
+  border: 2px solid rgb(68, 0, 68);
+  color:white;
 }
