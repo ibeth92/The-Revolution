@@ -9,6 +9,7 @@ from flask_cors import cross_origin
 # from werkzeug import secure_filename
 import pickle
 import pandas as pd
+from flask_sqlalchemy import SQLAlchemy
 
 # Setup Flask
 # Create an app, pass to __name__
@@ -18,6 +19,11 @@ app = Flask(__name__)
 model = pickle.load(open('svpickle_model.pkl', 'rb'))
 
 app.config['UPLOAD_FOLDER'] = 'uploads'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
+
+# # Remove tracking modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # svc_model.sav
 
