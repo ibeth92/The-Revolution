@@ -29,9 +29,15 @@ By first loading our dataset into Jupyter Notebook we were able to use the Pytho
 Using Librosa, we built a MIR (Music Information Retrieval System) which produced spectrograms from the analysis. These spectrograms are a visual representation of the spectrum of frequencies of sound as they vary over time. In 2 dimensional representations, the x axis is frequency while the second axis is time. These visual changes in frequency are what we were able to use to train our model to determine where genre differences lie. 
 
 
+### Spectrograms
+   ![3-Specs](Images/disco00000.png)
+   ![4-Specs](Images/blues00000.png)
+   ![5-Specs](Images/hiphop00000.png)
+   ![6-Specs](Images/metal00000.png)
+
 ### Datasets Used 
 
-   ![3-Music](Images/3.png)
+   ![7-Music](Images/3.png)
 
 Datasets Used:
 https://www.kaggle.com/carlthome/gtzan-genre-collection
