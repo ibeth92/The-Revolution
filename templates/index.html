@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+
+  <link href='{{ url_for('static', filename='style.css') }}' rel='stylesheet' type='text/css'/>
+  <title>Hello World in Flask</title>
+
+
   <title>Music Genre</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <link href='{{ url_for('assets/css', filename='style.css') }}' rel='stylesheet' type='text/css'/>
-  <title>Hello World in Flask</title>
   
   <!-- Google Fonts -->
   <link
@@ -18,10 +20,10 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
