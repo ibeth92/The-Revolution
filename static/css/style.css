@@ -263,7 +263,7 @@ section {
 # Audio
 --------------------------------------------------------------*/
 .audio {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../img/point_land.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/static/img/point2.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
