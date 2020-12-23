@@ -38,7 +38,7 @@ def homepage():
 def upload_file():
     if request.method == 'POST':
         f = request.files['file']
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'], file_name))
         return 'file uploaded successfully'
 
 @app.route('/predict/<file_name>', methods=['POST'])
